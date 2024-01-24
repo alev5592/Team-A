@@ -1,3 +1,10 @@
+:root{
+    --cosmic-blue: #003366;
+    --background-gray: #f0f0f0;
+    --nav-color: #00468b;
+    --border-color: #ccc;
+}
+
 *{
     padding: 0;
     margin:0;
@@ -8,3 +15,60 @@ body{
 
 }
 
+.header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cosmic-blue);
+}
+
+.header h1 {
+    color: #fff;
+}
+
+.nav{
+    background-color: var(--nav-color);
+    display: flex;
+    justify-content: center;
+    gap:8px;
+    padding: 16px;
+
+}
+.nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: aqua;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.row div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+
+}
+
+input, select{
+    border-radius: 8px;
+    height: 32px;
+    width: 172px;
+}
